@@ -19,5 +19,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['*'])
 
-DATABASES = env.db()
+DATABASES = {
+    'default': env.db(),
+}
 
